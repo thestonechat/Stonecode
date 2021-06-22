@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Stonecode</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="sidebar_title"><center>Stonecode</center></div>
+
+      <div id="file_manager" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div id="file_manager_title">
+              Open Files
+          </div>
+          <div style="width: 5vw; height: 4vh;"></div>
+
+          <!-- Folders to add in future! -->
+          <!-- <div class="open_folder" data-folderpath="C:\Users\Stonechat\Desktop\Stonecode\src" data-extended="false" onclick="extendFolder(this)">▲ Folder</div> -->
+          
+      </div>
+
+
+      <div id="sidebar_timer"><center>00:00:00</center></div>
+    </div>
+
+    <div id="editor">
+
+      <center><img src="./assets/nerd.png" alt="NERD" id="nerd"></center>
+      <center><div id="nerd_text"><b><i>Open some files, you nerd.</i></b></div></center>
+
+    </div>
+
+
+    
+    <div id="VERSION_BOX" style="position: absolute; bottom: 0; left: 0; font-size: 1vh;">test</div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/Ace/ace.js" defer></script>
+    <script src="./js/Ace/ext-language_tools.js" defer></script>
+    <script src="./js/Ace/ext-modelist.js" defer></script>
+    <script src="./js/file_manager.js" defer></script>
+    <script src="./js/editor.js" defer></script>
+    <script src="./js/timer.js" defer></script>
+    <script src="./js/hotkeys.js" defer></script>
+  </body>
+</html>
