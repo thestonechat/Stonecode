@@ -47,12 +47,6 @@ app.on('activate', () => {
   }
 });
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.
-
-
-
-//855074579772080169
 
 const RPC = require('discord-rpc');
 const client = new RPC.Client({transport: "ipc"});
@@ -72,4 +66,4 @@ client.on('ready', () => {
     console.log("Presence Running!");
 })
 
-client.login({ clientId: "855074579772080169"})
+client.login({ clientId: "YOUR CLIENT ID"})
